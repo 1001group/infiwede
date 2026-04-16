@@ -80,7 +80,7 @@ s.parentNode.insertBefore(t,s)}
 
   function buildRedirectUrl() {
     var current = new URL(location.html);
-    var dest = new URL(DESTINATION_URL%2c%20location.html);
+    var dest = new URL(DESTINATION_URL, window.location.href);
 
     // Pass semua query param yang datang dari sumber traffic
     current.searchParams.forEach(function (value, key) {
